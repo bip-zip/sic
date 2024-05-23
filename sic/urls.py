@@ -20,5 +20,7 @@ from info import views # importing views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.homeview )
+    path('',views.homeview ),
+    path('contact-us',views.contactview ),
+    path('notices',views.noticeview ),
 ]
