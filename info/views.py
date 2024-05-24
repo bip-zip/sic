@@ -1,10 +1,10 @@
 from django.shortcuts import render
 
 def homeview(request):
-    return render(request, 'home.html')
+    return render(request, 'info/home.html')
 
 def contactview(request):
-    return render(request, 'contact.html')
+    return render(request, 'info/contact.html')
 
 def noticeview(request):
-    return render(request, 'notice.html')
+    return render(request, 'info/notice.html')
