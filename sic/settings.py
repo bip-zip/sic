@@ -31,7 +31,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'info', #our first app name
-    'lms'
+    'lms'  #our lms app
 
 ]
 
