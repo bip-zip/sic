@@ -7,6 +7,9 @@ class Contact(models.Model):
     message = models.TextField(null= False, blank=False)
     created = models.DateTimeField(auto_now=True)
 
+    def __str__(self):
+        return f"{self.full_name} - {self.created}"
+
     
 
 
