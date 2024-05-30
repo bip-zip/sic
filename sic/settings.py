@@ -32,7 +32,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'info', #our first app name
     'lms',  #our lms app
-    'django_bootstrap5'
+    'django_bootstrap5',
+    'userauth'
 
 ]
 
