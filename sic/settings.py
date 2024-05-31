@@ -6,7 +6,8 @@ import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATES_DIRS = os.path.join(BASE_DIR,'templates')
-STATIC_DIRS = os.path.join(BASE_DIR,'static') #just added
+STATIC_DIRS = os.path.join(BASE_DIR,'static') 
+MEDIA_DIRS = os.path.join(BASE_DIR, 'media') #just added
 
 
 # Quick-start development settings - unsuitable for production
@@ -131,6 +132,9 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 STATICFILES_DIRS=[STATIC_DIRS,] #just added
+
+MEDIA_URL= '/media/'
+MEDIA_ROOT= MEDIA_DIRS
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
