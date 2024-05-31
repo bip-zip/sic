@@ -1,9 +1,15 @@
 from django.shortcuts import render, redirect
 from .forms import ContactForm
 from django.contrib import messages
+from .models import Notice
+from lms.models import Course
+
+
 
 def homeview(request):
-    return render(request, 'info/home.html')
+    courses = Course.objects.all().order_by('-id')
+    context ={'courses':courses}
+    return render(request, 'info/home.html', context)
 
 
 def contactview(request):
@@ -23,4 +29,6 @@ def contactview(request):
 
 
 def noticeview(request):
-    return render(request, 'info/notice.html')
+    notices = Notice.objects.all().order_by('-id')
+    context={'notices':notices}
+    return render(request, 'info/notice.html', context)
